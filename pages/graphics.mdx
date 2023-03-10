@@ -16,25 +16,25 @@ proc load_font_tty(destination: uint8, filename: cstring, glyphWidth: cint, glyp
 proc load_font_ttf(destination: uint8, filename: cstring, fontSize: cint, fontColor: Color)
 
 # clear an image, use 0 for screen
-proc clear_background(dst: uint8, color: Color)
+proc clear_background(destination: uint8, color: Color)
 
 # draw a circle on an image, use 0 for screen
-proc draw_circle(dst: uint8, centerX: int, centerY: int, radius:int, color: Color)
+proc draw_circle(destination: uint8, centerX: int, centerY: int, radius:int, color: Color)
 
 # draw a pixel on an image, use 0 for screen
-proc draw_pixel(dst: uint8, x: cint, y: cint, color: Color)
+proc draw_pixel(destination: uint8, x: cint, y: cint, color: Color)
 
 # draw a line on an image, use 0 for screen
-proc draw_line(dst: uint8, startPosX: cint, startPosY: cint, endPosX: cint, endPosY: cint, color: Color)
+proc draw_line(destination: uint8, startPosX: cint, startPosY: cint, endPosX: cint, endPosY: cint, color: Color)
 
 # draw a rectangle on an image, use 0 for screen
-proc draw_rectangle(dst: uint8, posX: cint, posY: cint, width: cint, height: cint, color: Color)
+proc draw_rectangle(destination: uint8, posX: cint, posY: cint, width: cint, height: cint, color: Color)
 
 # draw an image on an image, use 0 for screen
-proc draw_image(dst: uint8, src: uint8, posX: cint, posY: cint)
+proc draw_image(destination: uint8, src: uint8, posX: cint, posY: cint)
 
 # draw text on an image, use 0 for screen
-proc draw_text(dst: uint8, font: uint8, text: cstring, posX: cint, posY: cint)
+proc draw_text(destination: uint8, font: uint8, text: cstring, posX: cint, posY: cint)
 
 # fill image with a vertical gradient, use 0 for screen
 proc gradient_vertical(destination: uint8, width: cint, height: cint, top: Color, bottom: Color)
