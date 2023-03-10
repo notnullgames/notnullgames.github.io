@@ -1,0 +1,14 @@
+Our docs aren't really ready, but we're working on it.
+
+Here is the nim signatures for now:
+
+```nim
+# sound-source: load a sound file (ogg, wav, etc) from file inside the cart
+proc load_sound(destination: uint8, filename: cstring)
+
+# sound-source: create a text-to-speech talker
+proc load_speech(destination: uint8, text: cstring)
+
+# play a sound-source
+proc play_sound(id: uint8)
+```
